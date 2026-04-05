@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import todos,students, product
+from routers import todos,students, products
 
 app=FastAPI(
     title="CRUD API",
@@ -8,7 +8,7 @@ app=FastAPI(
 
 app.include_router(todos.router)
 app.include_router(students.router)
-app.include_router(product.router)
+app.include_router(products.router)
 
 @app.get("/")
 def home():
