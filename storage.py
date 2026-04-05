@@ -7,7 +7,7 @@ PRODUCTS_FILE="data/products.json"
 
 def read_data(filepath:str)->list:
     "Read all items from a JSON file. Return empty list if file doesnt exist."
-    if not os.path.exits(filepath):
+    if not os.path.exists(filepath):
         return []
     with open(filepath, "r")as f:
         return json.load(f)
