@@ -51,7 +51,7 @@ def update_student (student_id: int , updated: StudentUpdate):
             return student
     raise HTTPException(status_code=404 , detail= f"Student with id {student_id} not found")
 
-@router.delete("/{student_id}"):
+@router.delete("/{student_id}")
 def delete_student(student_id:int):
     students=read_data(STUDENTS_FILE)
     for student in students:
