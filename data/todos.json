@@ -16,19 +16,11 @@
     "updated_at": "2026-04-05T09:48:01.952983"
   },
   {
-    "id": 3,
-    "title": "Leetcode",
-    "description": "3 questions max",
-    "category": "DSA",
-    "created_at": "2026-04-05T09:48:04.163317",
-    "updated_at": "2026-04-05T09:48:04.163317"
-  },
-  {
     "id": 4,
-    "title": "Leetcode",
-    "description": "3 questions max",
-    "category": "DSA",
+    "title": "dev",
+    "description": "create a server",
+    "category": "challenging",
     "created_at": "2026-04-05T09:48:05.683275",
-    "updated_at": "2026-04-05T09:48:05.683275"
+    "updated_at": "2026-04-05T10:23:56.442496"
   }
 ]

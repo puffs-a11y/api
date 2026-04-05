@@ -31,7 +31,7 @@ def create_student(student : Student):
         "created_at":datetime.now().isoformat(),
         "updated_at":datetime.now().isoformat()
     }
-    student.append(new_student)
+    students.append(new_student)
     write_data(STUDENTS_FILE,students)
     return new_student
 
@@ -58,5 +58,5 @@ def delete_student(student_id:int):
         if student["id"]== student_id:
             students.remove(student)
             write_data(STUDENTS_FILE,students)
-            return {"message":"Student '{student['name']}' deleted successfully!"}
+            return {"message": f"Student '{student['name']}' deleted successfully"}
     raise HTTPException(status_code=404 , detail=f"Student with id {student_id} not found")

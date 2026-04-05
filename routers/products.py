@@ -61,5 +61,5 @@ def delete_product(product_id: int):
         if product["id"]==product_id:
             products.remove(product)
             write_data(PRODUCTS_FILE , products)
-            return{"message":f"Product '{product['name']}'deleted successfully!"}
+            return {"message": f"Product '{product['name']}' deleted successfully"}
     raise HTTPException(status_code=404 , detail=f"Product with id{product_id} not found")
